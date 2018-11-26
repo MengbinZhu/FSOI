@@ -9,7 +9,7 @@ from argparse import ArgumentParser,ArgumentDefaultsHelpFormatter
 from matplotlib import pyplot as plt
 import numpy as np
 
-sys.path.append('../lib')
+sys.path.append('lib')
 import lib_mapping as lmapping
 import lib_utils as lutils
 import lib_obimpact as loi

@@ -18,12 +18,13 @@ import pandas as pd
 from argparse import ArgumentParser,ArgumentDefaultsHelpFormatter
 from matplotlib import pyplot as plt
 
-sys.path.append('../lib')
+sys.path.append('lib')
+sys.path.append('.')
 import lib_utils as lutils
 import lib_obimpact as loi
 
-if __name__ == '__main__':
 
+def summary_fsoi_main():
     parser = ArgumentParser(description='Create and Plot Observation Impacts Statistics',
                             formatter_class=ArgumentDefaultsHelpFormatter)
     parser.add_argument('--center', help='originating center', type=str, required=True,
@@ -117,4 +118,6 @@ if __name__ == '__main__':
     else:
         plt.show()
 
-    sys.exit(0)
+
+if __name__ == '__main__':
+    summary_fsoi_main()

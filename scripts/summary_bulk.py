@@ -10,11 +10,13 @@ import pandas as pd
 from datetime import datetime
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 
-sys.path.append('../lib')
+sys.path.append('lib')
+sys.path.append('.')
 import lib_utils as lutils
 import lib_obimpact as loi
 
-if __name__ == '__main__':
+
+def summary_bulk_main():
 
     parser = ArgumentParser(description='Create Observation Impacts database',
                             formatter_class=ArgumentDefaultsHelpFormatter)
@@ -65,4 +67,6 @@ if __name__ == '__main__':
         lutils.writeHDF(fname_bulk, 'df', df, complevel=1,
                         complib='zlib', fletcher32=True)
 
-    sys.exit(0)
+
+if __name__ == '__main__':
+    summary_bulk_main()
