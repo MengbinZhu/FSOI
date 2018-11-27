@@ -1,0 +1,75 @@
+.header-div
+{
+  display: grid;
+  grid-template-columns: 120px auto;
+}
+
+.control-div
+{
+  border        : 1px solid #444;
+  border-radius : 6px;
+  padding       : 8px;
+  margin        : 10px;
+  position      : absolute;
+  top           : 84px;
+  left          : 0;
+  overflow      : hidden;
+  height        : calc(100% - 20px - 16px - 84px); /* 100% - 2*margin - 2*padding - header */
+  transition    : all 0.7s ease-in;
+}
+
+.control-div-open
+{
+  width : 455px;
+}
+
+.control-div-collapsed
+{
+  width : 64px;
+}
+
+.collapse-icon
+{
+  position            : relative;
+  left                : calc(100% - 8px - 48px);
+  width               : 48px;
+  height              : 16px;
+  background-size     : 100%;
+  background-repeat   : no-repeat;
+  background-position : center center;
+}
+
+.collapse-icon-open
+{
+  background-image : url("../assets/open.svg");
+}
+
+.collapse-icon-collapsed
+{
+  background-image : url("../assets/collapsed.svg");
+}
+
+.display-div
+{
+  border        : 1px solid #444;
+  border-radius : 6px;
+  padding       : 8px;
+  margin        : 10px;
+  position      : absolute;
+  overflow      : hidden;
+  top           : 84px;
+  height        : calc(100% - 20px - 16px - 84px);
+  transition    : all 0.7s ease-in;
+}
+
+.display-div-open
+{
+  left  : calc(455px + 16px + 20px);
+  width : calc(100% - (455px + 32px + 40px));
+}
+
+.display-div-collapsed
+{
+  left  : calc(64px + 20px + 16px);
+  width : calc(100% - 64px - 55px - 16px);
+}
