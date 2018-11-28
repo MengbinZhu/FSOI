@@ -23,25 +23,25 @@
   <div class="control-label">CYCLES</div>
   <div class="control-cycles-grid">
     <img class="cycle-hint" id="cycle_hint" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-    <mat-checkbox class="example-margin" [(ngModel)]="c00z" (mouseenter)="showCycleHint(0)" (mouseleave)="clearCycleHint()" labelPosition="after">00</mat-checkbox>
-    <mat-checkbox class="example-margin" [(ngModel)]="c06z" (mouseenter)="showCycleHint(6)" (mouseleave)="clearCycleHint()" labelPosition="after">06</mat-checkbox>
-    <mat-checkbox class="example-margin" [(ngModel)]="c12z" (mouseenter)="showCycleHint(12)" (mouseleave)="clearCycleHint()" labelPosition="after">12</mat-checkbox>
-    <mat-checkbox class="example-margin" [(ngModel)]="c18z" (mouseenter)="showCycleHint(18)" (mouseleave)="clearCycleHint()" labelPosition="after">18</mat-checkbox>
+    <mat-checkbox [(ngModel)]="c00z" (mouseenter)="showCycleHint(0)" (mouseleave)="clearCycleHint()" labelPosition="after">00</mat-checkbox>
+    <mat-checkbox [(ngModel)]="c06z" (mouseenter)="showCycleHint(6)" (mouseleave)="clearCycleHint()" labelPosition="after">06</mat-checkbox>
+    <mat-checkbox [(ngModel)]="c12z" (mouseenter)="showCycleHint(12)" (mouseleave)="clearCycleHint()" labelPosition="after">12</mat-checkbox>
+    <mat-checkbox [(ngModel)]="c18z" (mouseenter)="showCycleHint(18)" (mouseleave)="clearCycleHint()" labelPosition="after">18</mat-checkbox>
   </div>
 
   <div class="control-label">NORM</div>
   <div class="control-option-list">
-    <button class="control-option-button" mat-stroked-button (click)="showOptionDialog('NORM')">{{normSummary}}</button>
+    <button class="control-option-button" mat-stroked-button (click)="showOptionDialog('norm', false)">{{normSummary}}</button>
   </div>
 
   <div class="control-label">CENTERS</div>
   <div class="control-option-list">
-    <button class="control-option-button" mat-stroked-button (click)="showOptionDialog('CENTERS')">{{centersSummary}}</button>
+    <button class="control-option-button" mat-stroked-button (click)="showOptionDialog('center', false)">{{centersSummary}}</button>
   </div>
 
   <div class="control-label">PLATFORMS</div>
   <div class="control-option-list">
-    <button class="control-option-button" mat-stroked-button (click)="showOptionDialog('PLATFORMS')">{{platformsSummary}}</button>
+    <button class="control-option-button" mat-stroked-button (click)="showOptionDialog('platform', true)">{{platformsSummary}}</button>
   </div>
 
 </div>

@@ -6,6 +6,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {ControlsComponent} from './controls/controls.component';
 import {DisplayComponent} from './display/display.component';
+import {OptionsComponent} from './options/options.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
@@ -21,7 +22,8 @@ import {
   declarations: [
     AppComponent,
     ControlsComponent,
-    DisplayComponent
+    DisplayComponent,
+    OptionsComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import {
     MatInputModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [OptionsComponent]
 })
 export class AppModule
 {
