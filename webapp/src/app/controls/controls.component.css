@@ -46,3 +46,32 @@
   overflow    : hidden;
   text-align  : left;
 }
+
+.submit-button-container
+{
+  display               : grid;
+  grid-template-columns : auto;
+  margin                : 50px auto 10px auto;
+  width                 : 100%;
+}
+
+.submit-button-container-open
+{
+  height : 50px;
+}
+
+.submit-button-container-closed
+{
+  height : 0;
+}
+
+.error-container
+{
+  color: #f44336;
+}
+
+
+.error-item
+{
+  margin: 3px 0 3px 30px;
+}

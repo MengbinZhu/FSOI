@@ -6,15 +6,14 @@ import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
   templateUrl: './options.component.html',
   styleUrls: ['./options.component.css']
 })
-export class OptionsComponent implements OnInit {
-
+export class OptionsComponent implements OnInit
+{
   constructor(public dialogRef: MatDialogRef<OptionsComponent>, @Inject(MAT_DIALOG_DATA) public data: object)
   {
   }
 
-  ngOnInit() {
-    console.log('HERE in OptionDialog');
-    console.log(this.data);
+  ngOnInit()
+  {
   }
 
   selectAll(): void
@@ -37,12 +36,12 @@ export class OptionsComponent implements OnInit {
   {
     for (let i = 0; i < this.data['options'].length; i++)
     {
-      this.data['options'][i].selected = ! this.data['options'][i].selected;
+      this.data['options'][i].selected = !this.data['options'][i].selected;
     }
   }
 
   closeDialog(): void
   {
-    console.log('How do I close the dialog?');
+    this.dialogRef.close();
   }
 }

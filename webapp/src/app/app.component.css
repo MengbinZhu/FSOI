@@ -32,9 +32,9 @@
 .collapse-icon
 {
   position            : relative;
-  left                : calc(100% - 8px - 48px);
-  width               : 48px;
-  height              : 16px;
+  left                : calc(100% - 8px - 16px);
+  width               : 24px;
+  height              : 24px;
   background-size     : 100%;
   background-repeat   : no-repeat;
   background-position : center center;
@@ -47,7 +47,7 @@
 
 .collapse-icon-collapsed
 {
-  background-image : url("../assets/collapsed.svg");
+  background-image : url("../assets/collapse.svg");
 }
 
 .display-div
