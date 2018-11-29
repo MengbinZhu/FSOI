@@ -44,7 +44,10 @@
     <button class="control-option-button" mat-stroked-button (click)="showOptionDialog('platform', true)">{{platformsSummary}}</button>
   </div>
 
-  <div class="submit-button-container submit-button-container-open">
+  <div class="progress-bar progress-bar-{{progressBarMode}}">
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  </div>
+  <div class="submit-button-container submit-button-container-{{submitButtonMode}}">
     <button mat-raised-button color="primary" (click)="submitRequest()" [disabled]="invalidRequest">Submit</button>
   </div>
 

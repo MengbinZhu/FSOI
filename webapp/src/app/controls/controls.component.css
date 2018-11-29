@@ -53,6 +53,7 @@
   grid-template-columns : auto;
   margin                : 50px auto 10px auto;
   width                 : 100%;
+  overflow              : hidden;
 }
 
 .submit-button-container-open
@@ -62,16 +63,39 @@
 
 .submit-button-container-closed
 {
-  height : 0;
+  height  : 0;
+  margin  : 0;
+  padding : 0;
+}
+
+.progress-bar
+{
+  display               : grid;
+  grid-template-columns : auto;
+  margin                : 50px auto 10px auto;
+  width                 : 100%;
+  overflow              : hidden;
+}
+
+.progress-bar-open
+{
+  height : 50px;
+}
+
+.progress-bar-closed
+{
+  height  : 0;
+  margin  : 0;
+  padding : 0;
 }
 
 .error-container
 {
-  color: #f44336;
+  color : #f44336;
 }
 
 
 .error-item
 {
-  margin: 3px 0 3px 30px;
+  margin : 3px 0 3px 30px;
 }

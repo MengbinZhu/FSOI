@@ -30,8 +30,8 @@ export class ControlsComponent implements OnInit
   /* norm options */
   norm = {
     'options': [
-      {'name': 'Dry', 'selected': true},
-      {'name': 'Moist', 'selected': false}
+      {'name': 'dry', 'selected': true},
+      {'name': 'moist', 'selected': false}
     ]
   };
 
@@ -251,6 +251,9 @@ export class ControlsComponent implements OnInit
   centersSummary = '(0) No selections made';
   platformsSummary = '(0) No selections made';
 
+  submitButtonMode = 'open';
+  progressBarMode = 'closed';
+
   constructor(public dialog: MatDialog) {}
 
 
@@ -469,6 +472,9 @@ export class ControlsComponent implements OnInit
 
   submitRequest(): void
   {
+    this.progressBarMode = 'open';
+    this.submitButtonMode = 'closed';
+
     let url = 'https://xy4tm62l1a.execute-api.us-east-1.amazonaws.com/b1/chart';
 
     const startDate = '?start_date=' + this.dateToString(this.startDate);
